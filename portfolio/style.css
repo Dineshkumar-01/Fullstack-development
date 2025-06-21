@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.serif {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+
+.san {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+.white {
+    color: white;
+}
+
+.blackbg {
+    background-color: black;
+}
+
+.black {
+    color: black;
+}
+
+.greybg {
+    background-color: #f3f5f9;
+}
+
+.margin {
+    width: 100px;
+    height: 90vh;
+}
+
+.hero {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 100px;
+}
+
+.dp {
+    object-fit: cover;
+}
+
+.profile-ph-sum {
+    display: flex;
+}
+
+.summary {
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 200px;
+}
+
+
+.second {
+    height: 90vh;
+    display: flex;
+}
+
+
+
+.skills_margin {
+    height: 95vh;
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 70%;
+}
+.hello{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.third {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+}
+.skil-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+.skill-head{
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.four {
+    height: 95vh;
+    width: 100%;
+    background-color: #f4f1eb;
+    background-color:#f3f5f9;
+    color: #2E4053;
+}
+.four-c{
+    height: 95vh;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.project-img{
+    height: 400px;
+    width: 600px;
+}
+.proj-til{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.five{
+    height: 95vh;
+    display: flex;
+    background-color: #f4f1eb;
+}
+.e-e{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+.clg{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3E3E3E;
+}
+.text{
+margin-top: 10px;
+}
+.contact{
+    height: 80vh;
+    width: 100%;
+    background-color: #5b5b5b;
+}
+.conn{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-bottom:20px ;
+    font-size: xxx-large;
+}
+.details{
+    margin-left: 100px;
+    margin-top: 80px;
+    letter-spacing: 1px;
+}
+.link{
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 100px;
+    width: 300px;
+}
+a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.mrg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
