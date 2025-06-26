@@ -1,0 +1,12 @@
+h1{
+    color: purple;
+}
+.margin{
+    margin: 50px;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    margin-left: 100px;
+}
