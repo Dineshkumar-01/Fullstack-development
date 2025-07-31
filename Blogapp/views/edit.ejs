@@ -1,0 +1,56 @@
+<!-- Main Quill library -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css"
+  rel="stylesheet"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ </head>
+ <body>
+  <%- include("D:/Fullstack course/Blogapp/views/partials/header.ejs") %>
+  <main class="container my-4">
+    <h1>Editor</h1>
+    <hr>
+    <h2>Title : <%=title %></h2>
+
+
+<form action="<%= post !=null? '/edit/' + post.id : '/publish' %>" method="post">
+
+<!-- Create the editor container -->
+<div id="editor"  name="editor" aria-placeholder="Write your blog here">
+  <% if(post !=null){ %>
+   <%- post.content %> 
+  <% }else{ %>
+  <p>Write your blog here </p>
+  <p>Feel Free to <strong>USE</strong> All Features</p>
+  <p><br /></p>
+  <% } %>
+</div>
+<input type="hidden" name="content" id="hiddenContent">
+
+<button type="submit" class="btn btn-success">Save</button>
+<a href="/" class="btn btn-secondary">Cancel</a>
+</form>
+</main>
+<%- include("D:/Fullstack course/Blogapp/views/partials/footer.ejs") %>
+<!-- Include the Quill library -->
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+
+<script>
+  const quill = new Quill("#editor", {
+    theme: "snow",
+  });
+  document.querySelector('form').onsubmit = function () {
+   document.querySelector('#hiddenContent').value = quill.root.innerHTML;
+};
+</script>
+
+ </body>
+ </html>
+ 
